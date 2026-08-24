@@ -5,13 +5,13 @@ cask "qube" do
   # specific, so one DMG is shipped per architecture and Homebrew selects the
   # matching download.
   on_arm do
-    sha256 "0be8a8adbf0050b78e8bb3b08c6eddaac410f6a3eecc19387409ba59f48e0ee1"
+    sha256 "27e50b6569532f2590291914c701b76d11d7fbdfe0c660de8c9eb6f1fa0eaefe"
 
     url "https://github.com/dagaza/Qube/releases/download/v#{version}/Qube-#{version}-arm64.dmg",
         verified: "github.com/dagaza/Qube/"
   end
   on_intel do
-    sha256 "16dbc3e633004bbe7a983f22706123882db110014205c3a29bdb8bc53c21f9ec"
+    sha256 "c770688c6e84ef5a3478b9edbd41b2525e5c5c7e2e87d49a858c177fb38bf80f"
 
     url "https://github.com/dagaza/Qube/releases/download/v#{version}/Qube-#{version}-x86_64.dmg",
         verified: "github.com/dagaza/Qube/"
