@@ -1,17 +1,17 @@
 cask "qube" do
-  version "1.3.56"
+  version "1.3.57"
 
   # Native wheels (llama.cpp Metal, onnxruntime, ctranslate2) are architecture
   # specific, so one DMG is shipped per architecture and Homebrew selects the
   # matching download.
   on_arm do
-    sha256 "b775e56a3c1a2b9f0f885d55ac25b0027344cdf14d056924610e551ab84a9116"
+    sha256 "45b996546d3a15539fabbab4900d40a9539bb57cc1711997965a5934e2f3f2b0"
 
     url "https://github.com/dagaza/Qube/releases/download/v#{version}/Qube-#{version}-arm64.dmg",
         verified: "github.com/dagaza/Qube/"
   end
   on_intel do
-    sha256 "5f7499dca0ad417a282304d375267104de85fa85f8f0691e1171c4ce5a9de776"
+    sha256 "b8f8608ac0df22020962471da36342e6b106d92b95e2eeea4f4c399ce14a3f81"
 
     url "https://github.com/dagaza/Qube/releases/download/v#{version}/Qube-#{version}-x86_64.dmg",
         verified: "github.com/dagaza/Qube/"
